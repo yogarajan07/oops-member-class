@@ -1,0 +1,43 @@
+class Member {
+    private int memberId;
+    private String name;
+
+    public Member(int memberId, String name) {
+        this.memberId = memberId;
+        this.name = name;
+    }
+    public int getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(int memberId) {
+        this.memberId = memberId;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void display() {
+        System.out.println("Member ID: " + memberId + ", Name: " + name);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Member m1 = new Member(101, "John Doe");
+        m1.display();
+        m1.setName("Jane Smith");
+        m1.display();
+    }
+}
+
+
+
+
+
+
+
+
